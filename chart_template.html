@@ -29,6 +29,7 @@
             },
             "encoding": {
                 "column":{
+                    "type": "nominal",
                     "field":"season",
                     "title": null,
                     "sort": ["Winter", "Spring", "Summer", "Autumn"],
@@ -36,31 +37,31 @@
                 "x": {
                     "field": "tavg",
                     "axis": {
-                        "values": [-10, 0, 10,  20]
+                        "values": [-10, 0, 10,20],
                     },
 
-
                     "type": "quantitative",
-
+                    "title": null,
                 },
                 "y": {
+                    "type": "quantitative",
+
                     "axis": {
+                        "format": "s",
                         "domain": false,
                         "values": [300000, 350000, 400000, 450000, 500000]
                     },
                     "scale": {
                         "domain": [300000, 500000]
                     },
-                    "field": "consumption", //good,
+                    "field": "consumption",
                 },
-
-
                 "color": {
                     "field": "season",
                     "type": "nominal",
                     "legend": null,
                     "scale": {
-                        "range": ["#FFB00D", "#14633A", "#FFED17", "#1E4363"]
+                        "range": ["#FFB00D", "#14633A", "#FFED17", "#1E4363"],
                     },
                 }
             }
