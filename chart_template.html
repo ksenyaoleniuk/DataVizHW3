@@ -26,11 +26,12 @@
             "mark": "circle",
             "config": {
                 "background": "#eff2f0",
+                "padding": {"left": 10, "top": 10, "right": 60, "bottom": 10}
             },
             "encoding": {
                 "column":{
-                    "type": "nominal",
                     "field":"season",
+                    "type": "nominal",
                     "title": null,
                     "sort": ["Winter", "Spring", "Summer", "Autumn"],
                 },
@@ -41,7 +42,7 @@
                     },
 
                     "type": "quantitative",
-                    "title": null,
+                    "title": "temperature",
                 },
                 "y": {
                     "type": "quantitative",
